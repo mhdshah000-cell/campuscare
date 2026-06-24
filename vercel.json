@@ -1,4 +1,10 @@
 {
-  "cleanUrls": true,
-  "rewrites": [{ "source": "/(.*)", "destination": "/dist/client/$1" }]
+  "version": 2,
+  "framework": "tanstack-start",
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/.output/public/$1"
+    }
+  ]
 }
